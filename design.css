@@ -1,4 +1,4 @@
-/* Basic Body Structure - Sapientia 1.3 */
+/* Basic Body Structure - Solarized Dark */
 
 * {
 	margin: 0;
@@ -9,13 +9,13 @@
 }
 
 body {
-	color: #E8E7E3;
+	color: #93A1A1;
 	height: 100%;
  	z-index: 100;
 	font-size: 15pt;
 	overflow: hidden;
-	background-color: #242323;
-	font-family: "HelveticaNeue";
+	background-color: #002B36;
+	font-family: "Menlo";
 }
 
 #body_home {
@@ -95,12 +95,12 @@ body[customscroller="true"]::-webkit-scrollbar-thumb:hover {
 /* Time */
 
 body[dir="ltr"] .time {
-	color: #343434;
+	color: #586E75;
 	white-space: nowrap;
 }
 
 body[dir="rtl"] .time {
-	color: #343434;
+	color: #586E75;
 	white-space: nowrap;
 	padding-left: 0.4em;
 	display: inline-block;
@@ -120,15 +120,15 @@ body[dir="rtl"] .time {
 /* Links */
 
 a {
-	color: #FF7D40;
-	border-color: #FF7D40;
+	color: #DC322F;
+	border-color: #DC322F;
 	text-decoration: none;
 	border-bottom: dotted 1px;
 }
 
 a:hover {
-	color: #FF4500;
-	border-color: #FF4500;
+	color: #F23734;
+	border-color: #F23734;
 }
 
 /* Topic Bar */
@@ -137,12 +137,12 @@ a:hover {
 	top: 0;
 	left: 0;
 	right: 0;
-	color: #a39888;
+	color: #93A1A1;
 	z-index: 400;
 	opacity: 0; /* Set by JavaScript */
 	line-height: 145%;
 	position: fixed;
-	background: -webkit-linear-gradient(top, #494949 0%, #282828 100%);
+	background: -webkit-linear-gradient(top, #073642 0%, #002B36 100%);
 	padding: 2px 0.5em 3px;
 	border-bottom: 1px solid #544E45;
 	-webkit-box-shadow: 0 1px 5px #000;
@@ -162,13 +162,13 @@ a:hover {
 }
 
 #topic_bar a {
-	color: #FF7D40;
-	border-color: #FF7D40;
+	color: #DC322F;
+	border-color: #DC322F;
 }
 
 #topic_bar a:hover {
-	color: #FF4500;
-	border-color: #FF4500;
+	color: #F23734;
+	border-color: #F23734;
 }
 
 /* Images */
@@ -197,7 +197,7 @@ a:hover {
 	display: inline-block;
 	line-height: 14px;
 	font-size: 15px;
-	font-family: "Helvetica Neue" !important;
+	font-family: "Menlo" !important;
 	text-indent: 7px;
 	width: 16px;
 	height: 16px;
@@ -230,12 +230,12 @@ html[systemversion^="10.9"] .inlineImageCell .closeButton {
 }
 
 .message_buffer_loading_indicator span {
-	font-family: Optima !important;
+	font-family: "Menlo" !important;
 	font-size: 35px;
 	font-weight: 600;
 	letter-spacing: 5px;
 	line-height: 43px;
-	color: #797979;
+	color: #586E75;
 	-webkit-animation: ellipsis-period 1.5s infinite;
 	animation: ellipsis-period 1.5s infinite;
 }
@@ -270,7 +270,7 @@ html[systemversion^="10.9"] .inlineImageCell .closeButton {
 }
 
 .message_buffer_session_indicator > hr {
-	background: #444;
+	background: #EEE8D5;
 	border: 0;
 	height: 1px;
 	margin-top: 0.6em;
@@ -281,7 +281,7 @@ html[systemversion^="10.9"] .inlineImageCell .closeButton {
 .message_buffer_session_indicator > span {
 	font-style: oblique;
 	margin: 0 1em;
-	color: #919191;
+	color: #EEE8D5;
 }
 
 .message_buffer_session_indicator + #mark {
@@ -355,9 +355,9 @@ div.line[ltype="action"][highlight="true"] {
   	position: relative;
 	font-weight: normal;
  	padding: 2px 5px 2px 5px;
-	border-top: 1px solid #994C00;
-	border-bottom: 1px solid #994C00;
-  	background-color: #2d1e10 !important;
+	border-top: 1px solid #93a1a1;
+	border-bottom: 1px solid #93a1a1;
+	background-color: #073642 !important;
 }
 
 div.line[ltype="privmsg"] .message {
@@ -421,13 +421,13 @@ div.line[ltype="invite"],
 div.line[ltype="debug"],
 div.line[ltype="dcc-file-transfer"],
 div.line[ltype="off-the-record-encryption-status"] {
-	color: #777;
+	color: #93A1A1;
   	z-index: 190;
-	background: #222;
+	background: #073642;
   	position: relative;
  	padding: 2px 5px 2px 5px;
-	border-top: 1px solid #444;
-	border-bottom: 1px solid #444;
+	border-top: 1px solid #93A1A1;
+	border-bottom: 1px solid #93A1A1;
 }
 
 /* off-the-record-encryption-status Message Event */
@@ -482,7 +482,7 @@ div.line[ltype="mode"],
 div.line[ltype="topic"],
 div.line[ltype="website"] {
  	padding: 3px 5px 3px 5px;
-	color: #3D3D3D;
+	color: #93A1A1;
 }
 
 body[dir="ltr"] div.line[ltype="join"] .message:before {
@@ -532,160 +532,159 @@ body[dir="rtl"] div.line[ltype="nick"] .message:before {
 }
 
 div.line[ltype="privmsg"] .sender[mtype="myself"] {
-	color: #A9A9A9;
+	color: #657B83;
 }
 
 .sender[mtype="normal"][colornumber="0"],
 .inline_nickname[colornumber="0"] {
-	color: #D93826;
+	color: #DC322F;
 }
 
 .sender[mtype="normal"][colornumber="1"],
 .inline_nickname[colornumber="1"] {
-	color: #636aff;
+	color: #268bd2;
 }
 
 .sender[mtype="normal"][colornumber="2"],
 .inline_nickname[colornumber="2"] {
-	color: #00BA00;
+	color: #859900;
 }
 
 .sender[mtype="normal"][colornumber="3"],
 .inline_nickname[colornumber="3"] {
-	color: #C083F2;
+	color: #6C71C4;
 }
 
 .sender[mtype="normal"][colornumber="4"],
 .inline_nickname[colornumber="4"] {
-	color: #4DEDF0;
+	color: #2AA198;
 }
 
 .sender[mtype="normal"][colornumber="5"],
 .inline_nickname[colornumber="5"] {
-	color: #E422B2;
+	color: #D33682;
 }
 
 .sender[mtype="normal"][colornumber="6"],
 .inline_nickname[colornumber="6"] {
-	color: #EAE87E;
+	color: #B58900;
 }
-
 .sender[mtype="normal"][colornumber="7"],
 .inline_nickname[colornumber="7"] {
-	color: #B8DFFF;
+	color: #2EA8FF;
 }
 
 .sender[mtype="normal"][colornumber="8"],
 .inline_nickname[colornumber="8"] {
-	color: #75A1FB;
+	color: #CB4B16;
 }
 
 .sender[mtype="normal"][colornumber="9"],
 .inline_nickname[colornumber="9"] {
-	color: #97C74B;
+	color: #ACC700;
 }
 
 .sender[mtype="normal"][colornumber="10"],
 .inline_nickname[colornumber="10"] {
-	color: #A5EAC4;
+	color: #3DEBDC;
 }
 
 .sender[mtype="normal"][colornumber="11"],
 .inline_nickname[colornumber="11"] {
-	color: #FFA6A0;
+	color: #FF3936;
 }
 
 .sender[mtype="normal"][colornumber="12"],
 .inline_nickname[colornumber="12"] {
-	color: #8E67E7;
+	color: #8085E8;
 }
 
 .sender[mtype="normal"][colornumber="13"],
 .inline_nickname[colornumber="13"] {
-	color: #FFBB58;
+	color: #FF601C;
 }
 
 .sender[mtype="normal"][colornumber="14"],
 .inline_nickname[colornumber="14"] {
-	color: #EDD7AD;
+	color: #EDB200;
 }
 
 .sender[mtype="normal"][colornumber="15"],
 .inline_nickname[colornumber="15"] {
-	color: #FF1676;
+	color: #FF429D;
 }
 
 .sender[mtype="normal"][colornumber="16"],
 .inline_nickname[colornumber="16"] {
-	color: #706616;
+	color: #617000;
 }
 
 .sender[mtype="normal"][colornumber="17"],
 .inline_nickname[colornumber="17"] {
-	color: #46799c;
+	color: #1C669C;
 }
 
 .sender[mtype="normal"][colornumber="18"],
 .inline_nickname[colornumber="18"] {
-	color: #80372e;
+	color: #801D1B;
 }
 
 .sender[mtype="normal"][colornumber="19"],
 .inline_nickname[colornumber="19"] {
-	color: #8F478E;
+	color: #4F528F;
 }
 
 .sender[mtype="normal"][colornumber="20"],
 .inline_nickname[colornumber="20"] {
-	color: #5b9e4c;
+	color: #9BB300;
 }
 
 .sender[mtype="normal"][colornumber="21"],
 .inline_nickname[colornumber="21"] {
-	color: #13826c;
+	color: #218078;
 }
 
 .sender[mtype="normal"][colornumber="22"],
 .inline_nickname[colornumber="22"] {
-	color: #b13637;
+	color: #A83F13;
 }
 
 .sender[mtype="normal"][colornumber="23"],
 .inline_nickname[colornumber="23"] {
-	color: #e45d59;
+	color: #e65719;
 }
 
 .sender[mtype="normal"][colornumber="24"],
 .inline_nickname[colornumber="24"] {
-	color: #1b51ae;
+	color: #1F72AD;
 }
 
 .sender[mtype="normal"][colornumber="25"],
 .inline_nickname[colornumber="25"] {
-	color: #4855ac;
+	color: #545799;
 }
 
 .sender[mtype="normal"][colornumber="26"],
 .inline_nickname[colornumber="26"] {
-	color: #7f1d86;
+	color: #872353;
 }
 
 .sender[mtype="normal"][colornumber="27"],
 .inline_nickname[colornumber="27"] {
-	color: #73643f;
+	color: #735600;
 }
 
 .sender[mtype="normal"][colornumber="28"],
 .inline_nickname[colornumber="28"] {
-	color: #0b9578;
+	color: #26948b;
 }
 
 .sender[mtype="normal"][colornumber="29"],
 .inline_nickname[colornumber="29"] {
-	color: #569c96;
+	color: #35ccbf;
 }
 
 .sender[mtype="normal"][colornumber="30"],
 .inline_nickname[colornumber="30"] {
-	color: #08465f;
+	color: #124366;
 }

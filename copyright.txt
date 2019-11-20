@@ -1,4 +1,8 @@
-"Sapientia" is a style by Noah "Brisk" Darville-Jennings (http://www.noahdj.ca/).
+"Solarized-Dark" is a color modification of "Sapientia" for a Solarized-like
+theme.  See https://ethanschoonover.com/solarized/ .
+
+"Sapientia" is a style by Noah "Brisk" Darville-Jennings
+(http://www.noahdj.ca/).
 
 This style is based on the stripped down version of 
 the "Simplified" theme developed by "Cowboy" Ben Alman
